@@ -31,7 +31,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 60px;
+  height: 50px;
   box-shadow: 0px 2px 4px #000;
   font-family: AlegreSans-Regular;
 }
@@ -54,8 +54,8 @@ header {
 .navbar .nav .item {
   list-style: none;
   display: inline-block;
-  font-size: 26px;
-  line-height: 58px;
+  font-size: 22px;
+  line-height: 50px;
   margin-right: 60px;
   margin-top: 3px;
   transition: 0.5s ease;
@@ -82,14 +82,14 @@ header {
 }
 
 .navbar .logo img {
-  height: 36px;
+  height: 30px;
 }
 
 .banner {
   width: 100%;
   padding: 0;
   margin: 0;
-  height: 860px;
+  height: 800px;
   background-image: url("../Imgs/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -100,7 +100,7 @@ header {
   padding: 0px; 
   margin: 0px;
   width: 100%;
-  height: 860px;
+  height: 800px;
   background-color: rgba(17, 30, 53, 0.66);
 }
 
@@ -110,11 +110,14 @@ header {
   margin-right: auto;
   display: flex;
   justify-content: center;
+  width: 30%;
+
 }
 
 .big_logo img{
-  height: 320px;
-  width: 320px;
+  height: 100%;
+  width: 100%;
+  max-width: 350px;
 }
 
 .big_logo_title {
@@ -129,10 +132,10 @@ header {
 }
 
 .big_logo_title h1 {
-    font-size: 40px;
+    font-size: 30px;
 }
 
-.big_logo_apelativo {
+.big_logo_subtitle {
   display: block;
   width: 40%;
   margin-left: auto;
@@ -142,23 +145,23 @@ header {
   font-family: LUZRO;
  }
 
-.big_logo_apelativo h2 {
+.big_logo_subtitle h2 {
   margin-top: 0px;
   margin-bottom: 0px;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .convida_servicos {
   display: block;
   margin-top: 70px;
-  width: 23%;
+  width: 300px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   color: white;
   background-color: #111E35;
   font-family: AlegreSans-Regular;
-  border-radius: 10px;
+  border-radius: 20px;
   height: 54px; 
   transition: 200ms;
 }
@@ -172,8 +175,8 @@ header {
 }
 
 .convida_servicos h3 {
-  padding-top: 12px;
-  font-size: 24px;
+  padding-top: 14px;
+  font-size: 22px;
   letter-spacing: 4px;
 }
 
@@ -199,12 +202,12 @@ header {
 }
 
 .contato_container h2{
-  font-size: 50px;
+  font-size: 35px;
   font-family: AlegreSans-Regular;
   color: #111E35;
   padding: 0;
-  line-height: 50px;
-  border-bottom: 5px solid orange;
+  line-height: 40px;
+  border-bottom: 3px solid orange;
   letter-spacing: 3px;
 }
 
@@ -216,27 +219,31 @@ header {
 
 .contato {
   height: 480px;
-  width: 80%;
+  width: 70%;
   background-color: #111E35;
   box-shadow: 0px 2px 4px #000;
   margin-right: auto;
   margin-left: auto;
   border-radius: 3px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
 .formulario {
+  border: 2px solid white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center; 
   margin-top: auto;
   margin-bottom: auto;
   width: 45%;
-  height: 450px;
-  margin-top: 30px;
+  height: 380px;
 }
 
 .form_item {
   width: 100%;
-  margin-top: 30px;
 }
 
 input, textarea {
@@ -254,17 +261,14 @@ input, textarea {
 
 #mensagem_center textarea{
   height: 120px;
-  text-align: center;
   padding-top: 10px; 
 }
 
 #enviar{
   width: 100px;
   float: right;
-  margin-top: 36px;
-  margin-right: 5%;
   font-family: AlegreSans-Regular;
-  font-size: 28px;
+  font-size: 23px;
   height: 40px;
   letter-spacing: 2px;
   color: #111E35;
@@ -281,11 +285,8 @@ input, textarea {
 }
 
 .map {
-  margin-top: auto;
-  margin-bottom: auto;
   width: 45%;
   height:380px;
-  margin-top: 60px;
   border-radius: 4px;
   box-shadow: 0px 2px 4px #000;
 }
@@ -349,4 +350,43 @@ footer {
 .footer_endereco {
   text-align: center;
   line-height: 2px;
+}
+
+@media (max-width: 800px){
+  .big_logo img{
+    width: 240px;
+  }
+  .big_logo_title{
+    width: 80%;
+  }
+  .big_logo_subtitle{
+    width: 60%
+  }
+}
+
+@media (max-width: 500px){
+  .banner{
+    height: 650px
+  }
+  .banner .layer{
+    height: 650px
+  }
+  .big_logo img{
+    width: 200px;
+  }
+  .big_logo_title h1{
+    font-size: 22px
+  }
+  .big_logo_subtitle h2{
+    font-size: 19px
+  }
+  .convida_servicos{
+    margin-top: 20px;
+    width: 210px;
+    height: 48px;
+  }
+  .convida_servicos h3{
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
 }
