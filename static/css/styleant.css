@@ -1,15 +1,7 @@
-html{
+body,html{
     margin: 0px;
     border: 0px;
     padding: 0px;
-}
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  /* Altura qualquer */
-  top: 0;
-  background-color: #E0E0E0;
 }
 
 
@@ -109,7 +101,7 @@ body {
     position:absolute;
     justify-content: center;
     display:flex;
-    height: 15px;
+    height: 20px;
     width: 100%;
 }
 .circulo1{
@@ -126,7 +118,6 @@ body {
 
 .tab1{
     position:relative;
-    top:-5px;
     height: 20px;
     width: 20px;
     background-color: #F5A503;
@@ -138,10 +129,6 @@ body {
 
 .circulo1:hover .bloco1{
     display:block;
-}
-
-.circulo1:hover .tab1{
-  top:0px;
 }
 
 .tab1:focus .bloco1{
@@ -167,9 +154,10 @@ body {
     z-index:1;
     height: 20px;
     width: 20px;
-    background-color: #F5A503;
+    background-color: blue;
     border-radius: 50%;
     right: 300px;
+
 }
 
 .tab2{
@@ -180,11 +168,7 @@ body {
     border-radius: 50%;
     margin:0;
     border:0;
-    top:-5px;
-}
 
-.circulo2:hover .tab2{
-  top:0px;
 }
 
 .circulo2:hover .bloco2{
@@ -223,7 +207,7 @@ body {
     padding-left: 10px;
     padding-top:4px;
     padding-bottom:2px;
-    width:310px;
+    width:300px;
     height:30px;
     background-color: #F5A503;
     border-top-left-radius: 2%;
@@ -245,7 +229,7 @@ body {
 
 /*fontes*/
 @font-face {
-    font-family: 'LUZRO';
+    font-family: 'conteudo';
     font-style: normal;
     font-weight: normal;
     src: local('LuzSans-Book'), url('fonts/LUZRO.woff') format('woff');
@@ -253,29 +237,14 @@ body {
 
 @font-face {
     font-family:"titulo";
-    src:url("fonts/Al__gre_Sans.eot") format("eot"),
+    src:url("fonts/Al__gre_Sans.eot?") format("eot"),
         url("fonts/Al__gre_Sans.woff") format("woff"),
         url("fonts/Al__gre_Sans.ttf") format("truetype"),
-        url("fonts/Al__gre_Sans.svg") format("svg");
+        url("fonts/Al__gre_Sans.svg#AlegreSans") format("svg");
     font-weight: bold;
     font-style:normal;
-}
 
-@font-face {
-  font-family: 'AlegreSans-Regular';
-  src: url("fonts/AlegreSans-Regular.ttf") format("truetype");
 }
-
-@font-face {
-font-family: 'LUZRO';
-src: url("fonts/LUZRO.ttf") format("truetype");
-}
-
-@font-face {
-font-family: 'MizoArial';
-src: url("fonts/MizoArial.ttf") format("truetype");
-}
-
 /* para remover*/
 
 .antes{
@@ -290,11 +259,33 @@ src: url("fonts/MizoArial.ttf") format("truetype");
 	background-color: #111E35;
 }
 
+@font-face {
+    font-family: AlegreSans-Regular;
+    src: url(fonts/AlegreSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: LUZRO;
+  src: url("fonts/LUZRO.ttf");
+}
+
+@font-face {
+  font-family: MizoArial;
+  src: url("fonts/MizoArial.ttf");
+}
+
 *{
   box-sizing: border-box;
 }
 
-
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* Altura qualquer */
+  top: 0;
+  background-color: #E0E0E0;
+}
 
 header {
   background-color: #111E35;
@@ -303,7 +294,7 @@ header {
   width: 100%;
   height: 50px;
   box-shadow: 0px 2px 4px #000;
-  font-family: "AlegreSans-Regular";
+  font-family: AlegreSans-Regular;
 }
 
 .navbar {
@@ -398,7 +389,7 @@ header {
   width: 60%;
   text-align: center;
   color: white;
-  font-family: "LUZRO";
+  font-family: LUZRO;
 }
 
 .big_logo_title h1 {
@@ -412,7 +403,7 @@ header {
   margin-right: auto;
   text-align: center;
   color: white;
-  font-family: "LUZRO";
+  font-family: LUZRO;
  }
 
 .big_logo_subtitle h2 {
@@ -422,6 +413,7 @@ header {
 }
 
 .convida_servicos {
+  display: block;
   margin-top: 70px;
   width: 300px;
   margin-left: auto;
@@ -429,8 +421,8 @@ header {
   text-align: center;
   color: white;
   background-color: #111E35;
-  font-family: "AlegreSans-Regular";
-  border-radius: 5px;
+  font-family: AlegreSans-Regular;
+  border-radius: 20px;
   height: 54px; 
   transition: 200ms;
 }
@@ -447,7 +439,6 @@ header {
   padding-top: 14px;
   font-size: 22px;
   letter-spacing: 4px;
-  text-align: center;
 }
 
 /* */
@@ -467,9 +458,8 @@ header {
 
 .contato_container {
   width: 100%;
-  height: auto;
+  height: 700px;
   background-color: #F2F2F2;
-  padding-bottom:40px;
 }
 
 .contato_container h2{
@@ -489,7 +479,7 @@ header {
 }
 
 .contato {
-  height: auto;
+  height: 480px;
   width: 70%;
   background-color: #111E35;
   box-shadow: 0px 2px 4px #000;
@@ -499,35 +489,30 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-content: space-around;
-  padding-top:30px;
-  padding-bottom:30px;
 }
 
 .formulario {
+  border: 2px solid white;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: space-around;
+  align-content: center; 
+  margin-top: auto;
+  margin-bottom: auto;
   width: 45%;
   height: 380px;
-  padding:0;
 }
-.form_in{
-  height:100%;
-  width:100%;
-  padding: 0;
-  margin: 0;
-}
+
 .form_item {
   width: 100%;
 }
 
 input, textarea {
-  margin-bottom: 32px;
   font-family: MizoArial;
   letter-spacing: 1px;
-  width: 100%;
+  padding-left: 1%;
+  margin-left: 5%;
+  width: 90%;
   height: 30px;
   box-shadow: 0px 2px 4px #000;
   background-color: #F1F1F1;
@@ -537,8 +522,7 @@ input, textarea {
 
 #mensagem_center textarea{
   height: 120px;
-  padding-top: 10px;
-  width: 100%;
+  padding-top: 10px; 
 }
 
 #enviar{
@@ -639,23 +623,14 @@ footer {
   .big_logo_subtitle{
     width: 60%
   }
-  .map{
-    margin-top:30px;
-    width:90%;
-    margin-bottom:30px;
-  }
-  .formulario{
-    margin-top:40px;
-    width: 90%;
-  }
 }
 
 @media (max-width: 500px){
   .banner{
-    height: 100vh;
+    height: 650px
   }
   .banner .layer{
-    height: 100vh;
+    height: 650px
   }
   .big_logo img{
     width: 200px;
