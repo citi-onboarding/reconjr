@@ -629,6 +629,10 @@ footer {
   .big_logo_subtitle{
     width: 60%
   }
+  .botao_enviar{
+    display:flex;
+    justify-content: center;
+  }
   .map{
     margin-top:30px;
     width:90%;
