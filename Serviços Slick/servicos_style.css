@@ -1,0 +1,233 @@
+html{
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* Altura qualquer */
+  top: 0;
+  background-color: #E0E0E0;
+}
+
+/*fontes*/
+@font-face {
+    font-family: 'LUZRO';
+    font-style: normal;
+    font-weight: normal;
+    src: local('LuzSans-Book'), url('fonts/LUZRO.woff') format('woff'),
+                                url("fonts/LUZRO.ttf") format("truetype");
+}
+
+@font-face {
+    font-family:"titulo";
+    src:url("fonts/Al__gre_Sans.eot") format("eot"),
+        url("fonts/Al__gre_Sans.woff") format("woff"),
+        url("fonts/Al__gre_Sans.ttf") format("truetype"),
+        url("fonts/Al__gre_Sans.svg") format("svg");
+    font-weight: bold;
+    font-style:normal;
+}
+
+@font-face {
+  font-family: 'AlegreSans-Regular';
+  src: url("fonts/AlegreSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+font-family: 'MizoArial';
+src: url("fonts/MizoArial.ttf") format("truetype");
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.blank {
+  width: 100%;
+  height: 500px;
+  background-color: #E0E0E0;;
+}
+
+.top_servicos, .bottom_servicos {
+  width: 100%;
+  height: 50px;
+  background-color: #F2F2F2;
+} 
+
+.top_servicos {
+  -webkit-clip-path: ellipse(55% 100% at 50% 100%);
+  clip-path: ellipse(55% 100% at 50% 100%);
+}
+
+.bottom_servicos {
+  -webkit-clip-path: ellipse(55% 100% at 50% 0%);
+  clip-path: ellipse(55% 100% at 50% 0%);
+}
+
+.servicos_container {
+  width: 100%;
+  height: auto;
+  background-color: #F2F2F2;
+  padding-bottom:40px;
+}
+
+.servicos_container h2{
+  font-size: 35px;
+  font-family: AlegreSans-Regular;
+  color: #111E35;
+  padding: 0;
+  line-height: 40px;
+  border-bottom: 3px solid orange;
+  letter-spacing: 3px;
+}
+
+.servicos_label {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* A parte acima não inclui o slider */
+
+.slider-wr {
+  width: 70%;
+  height: auto;
+  margin: 30px auto 0px;
+}
+
+.item-container {
+  align-content: center;
+  text-align: center;
+  padding: 0px 5%;
+}
+
+.item {
+  border-width: thin;
+  box-shadow: 0 4px 2px -2px grey;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+
+/* Cor das arrows */
+
+.slick-prev:before,
+.slick-next:before {
+  color: #111E35;
+  opacity: 1;
+}
+
+.imagem_do_servico {
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  height: 90px;
+}
+
+#imagem_do_servico1 {
+  background-image: url("images/servico1.jpg");
+}
+
+#imagem_do_servico2 {
+  background-image: url("images/servico2.jpg");
+}
+
+#imagem_do_servico3 {
+  background-image: url("images/servico3.jpg");
+}
+
+#imagem_do_servico4 {
+  background-image: url("images/servico4.jpg");
+}
+
+#imagem_do_servico5 {
+  background-image: url("images/servico5.jpg");
+}
+
+.item h3 {
+  font-size: 26px;
+  font-family: 'LUZRO';
+  margin: 30px auto 0px;
+}
+
+.item p {
+  font-size: 16px;
+  padding: 10px 10px 20px;
+  font-family: 'LUZRO';
+}
+
+/* Fim do codigo do slider */
+
+.entre_em_contato_container {
+  margin: 66px auto 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.entre_em_contato{
+  font-family: AlegreSans-Regular;
+  font-size: 23px;
+  letter-spacing: 2px;
+  color: #111E35;
+  padding: 10px 70px;
+  background-color: orange;
+  cursor: pointer;
+  transition: 200ms;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px #000;
+  text-decoration: none;
+}
+
+.entre_em_contato:hover{
+  background-color: #111E35;
+  transform: scale(1.01);
+  font-size: 1.01;
+  color: #F2F2F2;
+}
+
+@media (max-width: 800px){
+  .imagem_do_servico {
+    height: 60px;
+  }
+
+  .item h3 {
+    margin: 15px auto 0px;
+    font-size: 20px;
+  }
+
+  .item p {
+  padding: 2px 10px 2px;
+   font-size: 14px; 
+  }
+}
+
+@media (max-width: 550px){
+  .imagem_do_servico {
+    height: 80px;
+  }
+
+  .item h3 {
+  font-size: 26px;
+  padding: 0px 7px;
+  margin: 30px auto 0px;
+  }
+
+  .item p {
+  font-size: 15px;
+  padding: 5px 5px 10px;
+  }
+
+  .slider-wr {
+  width: 100%;
+  height: auto;
+  margin: 20px auto 0px;
+  }
+
+  .entre_em_contato{
+  padding: 10px 30px;
+  }
+}
