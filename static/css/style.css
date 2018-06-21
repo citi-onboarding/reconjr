@@ -11,22 +11,7 @@ html{
   /* Altura qualquer */
   top: 0;
   background-color: #E0E0E0;
-<<<<<<< HEAD
-  
-  margin: 0px;
-  border: 0px;
-  padding: 0px;
 
-}
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  /* Altura qualquer */
-  top: 0;
-  background-color: #E0E0E0;
-=======
->>>>>>> Ajuste da responsividade
 }
 
 .class{
@@ -153,13 +138,9 @@ border-bottom: 10px solid transparent;
   display:block;
 }
 
-<<<<<<< HEAD
 
-.tab1:focus .bloco1{
-=======
 .tab1:focus #bloco1{
->>>>>>> Ajuste da responsividade
-display:block;
+  display:block;
 }
 
 .bloco {
@@ -187,7 +168,7 @@ display:block;
   top:-5px;
 }
 
-<<<<<<< HEAD
+
 .circulo2:hover .tab2{
     top:0px;
     position:relative;
@@ -211,10 +192,8 @@ display:block;
     top: 0px;
 }
 
-.circulo2:hover .bloco2{
-=======
+
 #circulo2:hover #bloco2{
->>>>>>> Ajuste da responsividade
   display:block;
 }
 
@@ -259,8 +238,7 @@ display:block;
 /* com 100px de width precisamos mudar a localização das bolas da historia*/
 
 /*fontes*/
-<<<<<<< HEAD
-=======
+
 @font-face {
   font-family: 'LUZRO';
   font-style: normal;
@@ -268,7 +246,7 @@ display:block;
   src: local('LuzSans-Book'), url('../fonts/LUZRO.woff') format('woff'),
        local('LuzSans-Book'), url('../fonts/LUZRO.TTF') format('ttf');
   }
->>>>>>> Ajuste da responsividade
+
 
 
 @font-face {
@@ -476,13 +454,7 @@ background-color: #F2F2F2;
 padding-bottom:40px;
 }
 
-<<<<<<< HEAD
-
-
-.contato_container h2{
-=======
 .contato_container h1{
->>>>>>> Ajuste da responsividade
 font-size: 35px;
 font-family: AlegreSans-Regular;
 color: #111E35;
@@ -493,12 +465,7 @@ letter-spacing: 3px;
 
 }
 
-<<<<<<< HEAD
-
-.contato_label {
-=======
 .titulo_label {
->>>>>>> Ajuste da responsividade
 padding: 0;
 display: flex;
 justify-content: center;
@@ -687,8 +654,6 @@ line-height: 2px;
     margin-top:40px;
     width: 90%;
   }
-<<<<<<< HEAD
-=======
   .botao_enviar{
     display:flex;
     justify-content: center;
@@ -724,7 +689,6 @@ line-height: 2px;
     width: 30px;
   }
 
->>>>>>> Ajuste da responsividade
 }
 
 @media (max-width: 500px){
@@ -753,9 +717,6 @@ line-height: 2px;
     letter-spacing: 2px;
   }
 
-<<<<<<< HEAD
-}
-=======
   .content_hist .header h1{
     font-size: 2.0em;
   }
@@ -784,4 +745,3 @@ line-height: 2px;
     height: 230px;
   }
 }
->>>>>>> Ajuste da responsividade
