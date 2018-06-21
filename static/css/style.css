@@ -1,9 +1,23 @@
 html{
+
   margin: 0px;
   border: 0px;
   padding: 0px;
 }
   body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* Altura qualquer */
+  top: 0;
+  background-color: #E0E0E0;
+  
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+
+}
+body {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -105,11 +119,13 @@ border-bottom: 10px solid transparent;
 }
 
 .circulos{/*Aqui ficarão todos as historias*/
+
   position:absolute;
   justify-content: center;
   display:flex;
   height: 15px;
   width: 100%;
+
 }
 .circulo1{
   position:relative;
@@ -124,6 +140,7 @@ border-bottom: 10px solid transparent;
 }
 
 .tab1{
+
   position:relative;
   top:-5px;
   height: 20px;
@@ -141,6 +158,10 @@ border-bottom: 10px solid transparent;
 
 .circulo1:hover .tab1{
 top:0px;
+}
+
+.circulo1:hover .tab1{
+  top:0px;
 }
 
 .tab1:focus .bloco1{
@@ -161,6 +182,7 @@ display:block;
 }
 /*Cada bloco precisa disso:*/
 .circulo2{
+
   position:relative;
   left: -140px;
   z-index:1;
@@ -183,7 +205,26 @@ display:block;
 }
 
 .circulo2:hover .tab2{
-top:0px;
+    top:0px;
+    position:relative;
+    left: -140px;
+    z-index:1;
+    height: 20px;
+    width: 20px;
+    background-color: #F5A503;
+    border-radius: 50%;
+    right: 300px;
+}
+
+.tab2{
+    position:relative;
+    height: 20px;
+    width: 20px;
+    background-color: #F5A503;
+    border-radius: 50%;
+    margin:0;
+    border:0;
+    top:-5px;
 }
 
 .circulo2:hover .bloco2{
@@ -218,6 +259,7 @@ display:block;
 }
 
 .header_bloco{
+
   display:flex;
   padding-left: 10px;
   padding-top:4px;
@@ -227,6 +269,7 @@ display:block;
   background-color: #F5A503;
   border-top-left-radius: 2%;
   border-top-right-radius: 2%;
+
 }
 
 .content{
@@ -244,22 +287,18 @@ display:block;
 
 /*fontes*/
 @font-face {
-  font-family: 'LUZRO';
-  font-style: normal;
-  font-weight: normal;
-  src: local('LuzSans-Book'), url('../fonts/LUZRO.woff') format('woff'),
-       local('LuzSans-Book'), url('../fonts/LUZRO.TTF') format('ttf');
-  }
-
+  font-family: 'AlegreSans-Regular';
+  src: url("fonts/AlegreSans-Regular.ttf") format("truetype");
+}
 
 @font-face {
-font-family: 'AlegreSans-Regular';
-src: url("../fonts/AlegreSans-Regular.ttf") format("truetype");
+font-family: 'LUZRO';
+src: url("fonts/LUZRO.ttf") format("truetype");
 }
 
 @font-face {
 font-family: 'MizoArial';
-src: url("../fonts/MizoArial.ttf") format("truetype");
+src: url("fonts/MizoArial.ttf") format("truetype");
 }
 
 /* para remover*/
@@ -295,7 +334,7 @@ font-family: 'AlegreSans-Regular';
 .navbar {
 position: relative;
 width: 100%;
-padding: 0;
+padding: 000;
 margin: 0;
 }
 
@@ -476,37 +515,37 @@ justify-content: center;
 }
 
 .contato {
-height: auto;
-width: 70%;
-background-color: #111E35;
-box-shadow: 0px 2px 4px #000;
-margin-right: auto;
-margin-left: auto;
-border-radius: 3px;
-display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-align-content: space-around;
-padding-top:30px;
-padding-bottom:30px;
+  height: auto;
+  width: 70%;
+  background-color: #111E35;
+  box-shadow: 0px 2px 4px #000;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  padding-top:30px;
+  padding-bottom:30px;
 }
 
 .formulario {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-align-content: space-around;
-width: 45%;
-height: 380px;
-padding:0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  width: 45%;
+  height: 380px;
+  padding:0;
+}
+.form_in{
+  height:100%;
+  width:100%;
+  padding: 0;
+  margin: 0;
 }
 
-.form-in{
-height:100%;
-width:100%;
-padding: 0;
-margin: 0;
-}
 .form_item {
 width: 100%;
 }
@@ -639,53 +678,50 @@ line-height: 2px;
 /*MEDIA QUERY*/
 
 @media (max-width: 800px){
-.big_logo img{
-  width: 240px;
-}
-.big_logo_title{
-  width: 80%;
-}
-.big_logo_subtitle{
-  width: 60%
-}
-.map{
-  margin-top:30px;
-  width:90%;
-  margin-bottom:30px;
-}
-.formulario{
-  margin-top:40px;
-  width: 90%;
-}
-.botao_enviar{
-  display:flex;
-  justify-content: center;
-}
+  .big_logo img{
+    width: 240px;
+  }
+  .big_logo_title{
+    width: 80%;
+  }
+  .big_logo_subtitle{
+    width: 60%
+  }
+  .map{
+    margin-top:30px;
+    width:90%;
+    margin-bottom:30px;
+  }
+  .formulario{
+    margin-top:40px;
+    width: 90%;
+  }
 }
 
 @media (max-width: 500px){
-.banner{
-  height: 100vh;
-}
-.banner .layer{
-  height: 100vh;
-}
-.big_logo img{
-  width: 200px;
-}
-.big_logo_title h1{
-  font-size: 22px
-}
-.big_logo_subtitle h2{
-  font-size: 19px
-}
-.convida_servicos{
-  margin-top: 20px;
-  width: 210px;
-  height: 48px;
-}
-.convida_servicos h3{
-  font-size: 18px;
-  letter-spacing: 2px;
+  .banner{
+    height: 100vh;
+  }
+  .banner .layer{
+    height: 100vh;
+  }
+  .big_logo img{
+    width: 200px;
+  }
+  .big_logo_title h1{
+    font-size: 22px
+  }
+  .big_logo_subtitle h2{
+    font-size: 19px
+  }
+  .convida_servicos{
+    margin-top: 20px;
+    width: 210px;
+    height: 48px;
+  }
+  .convida_servicos h3{
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
 }
 }
