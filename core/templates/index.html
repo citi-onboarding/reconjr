@@ -6,9 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 	<title>Recon Jr</title>
 	<link rel="shortcut icon" href="https://scontent.frec10-1.fna.fbcdn.net/v/t1.0-9/11903825_892163797497313_1265246069577454465_n.jpg?_nc_cat=0&oh=53c0b06513d64c134be8c90ba19f6180&oe=5B645910"/>
-	<meta name="viewport" content="widht=device-widht, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/style.css' %}"/>
-
 </head>
 <body>
 	<!-- Navbar -->
@@ -74,9 +73,9 @@
                     <div class="triangulo"></div>
                 </div>
                 <div class="circulos">
-                    <div class="circulo1">
+                    <div class="circulo" id="circulo1">
                         <button type="button" class="tab1">                            
-                            <div class="bloco1">
+                            <div class="bloco" id="bloco1" >
                                 <div class="header_bloco">
                                     <h2>2011</h2>
                                 </div>
@@ -86,9 +85,9 @@
                             </div>
                         </button>
                     </div>
-                    <div class="circulo2">
-                        <button type="button" class="tab2">                            
-                            <div class="bloco2">
+                    <div class="circulo" id="circulo2">
+                        <button type="button" class="tab2" >                            
+                            <div class="bloco" id="bloco2">
                                 <div class="header_bloco">
                                     <h2>2012</h2>
                                 </div>
@@ -105,6 +104,8 @@
         </div>
     </div>
 
+    <!-- NOSSOS MEMBROS-->
+
     <div class = "nossos_membros">
         <div class="titulo_label" >
             <h1>
@@ -112,6 +113,12 @@
             </h1>
         </div>
         <div class="carrossel_membros">
+
+            {% for membro in membros %}
+            <img class="foto-membros" src= "{{membro.image.url}}"/>
+            <img src="{% static 'membro.image.url' %}" alt="{{ membro.name.url }}" />
+            {% endfor %}
+
         </div>
     </div>
     <div class="contato_over_bckg"></div>
@@ -120,6 +127,7 @@
     	<div class="contato">
     		<div class="formulario">
     			<form="dados" class="form_in">
+
 				 	<div class="form_item"><input type="text" name="nome" placeholder="Nome"></div>
 				 	<div class="form_item"><input type="text" name="email" placeholder="Email"></div>
 				 	<div class="form_item"><input type="text" name="telefone" placeholder="Telefone"></div>
