@@ -11,6 +11,7 @@ html{
   /* Altura qualquer */
   top: 0;
   background-color: #E0E0E0;
+<<<<<<< HEAD
   
   margin: 0px;
   border: 0px;
@@ -24,8 +25,13 @@ body {
   /* Altura qualquer */
   top: 0;
   background-color: #E0E0E0;
+=======
+>>>>>>> Ajuste da responsividade
 }
 
+.class{
+  width:50px
+}
 
 .nossa_historia{
   display: flex;
@@ -110,6 +116,7 @@ body {
   width: 90%;
   background-color: #F2F2F2;
 }
+
 .triangulo{
   width: 0;
 height: 0;
@@ -120,21 +127,14 @@ border-bottom: 10px solid transparent;
 
 .circulos{/*Aqui ficarão todos as historias*/
   position:absolute;
-  justify-content: center;
+  justify-content: space-evenly;
   display:flex;
   height: 15px;
   width: 100%;
 }
-.circulo1{
-  position:relative;
-  right: 200px;
-  z-index:1;
-  height: 20px;
-  width: 20px;
-  background-color: #F5A503;
-  border-radius: 50%;
-  right: 300px;
 
+.circulo{
+  margin-top: 3px
 }
 
 .tab1{
@@ -149,16 +149,20 @@ border-bottom: 10px solid transparent;
 
 }
 
-.circulo1:hover .bloco1{
+#circulo1:hover #bloco1{
   display:block;
 }
 
+<<<<<<< HEAD
 
 .tab1:focus .bloco1{
+=======
+.tab1:focus #bloco1{
+>>>>>>> Ajuste da responsividade
 display:block;
 }
 
-.bloco1{
+.bloco {
   position:relative;
   top:23px;
   left:5px;
@@ -171,16 +175,6 @@ display:block;
   display:none;
 }
 /*Cada bloco precisa disso:*/
-.circulo2{
-  position:relative;
-  left: -140px;
-  z-index:1;
-  height: 20px;
-  width: 20px;
-  background-color: #F5A503;
-  border-radius: 50%;
-  right: 300px;
-}
 
 .tab2{
   position:relative;
@@ -193,6 +187,7 @@ display:block;
   top:-5px;
 }
 
+<<<<<<< HEAD
 .circulo2:hover .tab2{
     top:0px;
     position:relative;
@@ -217,25 +212,16 @@ display:block;
 }
 
 .circulo2:hover .bloco2{
+=======
+#circulo2:hover #bloco2{
+>>>>>>> Ajuste da responsividade
   display:block;
 }
 
-.tab2:focus .bloco2{
+.tab2:focus #bloco2{
 display:block;
 }
 
-.bloco2{
-  position:relative;
-  top:23px;
-  left:5px;
-  z-index:5;
-  border-radius: 2%;
-  background-color:#FFFFFF;
-  width:310px;
-  height:180px;
-  right: 150px;
-  display:none;
-}
 /*ate aqui*/
 .header_bloco h2{
   width:100%;
@@ -243,7 +229,7 @@ display:block;
   margin-top:0px;
   margin-bottom:0px;
   font-size: 1.6em;
-  font-family:'titulo';
+  font-family: 'AlegreSans-Regular';
   letter-spacing:3px;
 }
 
@@ -262,7 +248,7 @@ display:block;
 .content{
   color:#041733;
   padding-left:10px;
-  font-family:"conteudo";
+  font-family:'LUZRO';
   width: 300px;
   height: 135px;
 }
@@ -273,28 +259,33 @@ display:block;
 /* com 100px de width precisamos mudar a localização das bolas da historia*/
 
 /*fontes*/
+<<<<<<< HEAD
+=======
+@font-face {
+  font-family: 'LUZRO';
+  font-style: normal;
+  font-weight: normal;
+  src: local('LuzSans-Book'), url('../fonts/LUZRO.woff') format('woff'),
+       local('LuzSans-Book'), url('../fonts/LUZRO.TTF') format('ttf');
+  }
+>>>>>>> Ajuste da responsividade
 
 
 @font-face {
 font-family: 'AlegreSans-Regular';
-src: url("fonts/AlegreSans-Regular.ttf") format("truetype");
-}
-
-@font-face {
-font-family: 'LUZRO';
-src: url("fonts/LUZRO.ttf") format("truetype");
+src: url("../fonts/AlegreSans-Regular.ttf") format("truetype");
 }
 
 @font-face {
 font-family: 'MizoArial';
-src: url("fonts/MizoArial.ttf") format("truetype");
+src: url("../fonts/MizoArial.ttf") format("truetype");
 }
 
 /* para remover*/
 
 .antes{
 width: 100%;
-height: 30vh;
+height: 10vh;
 background-color: #F2F2F2; 
 }
 
@@ -317,7 +308,7 @@ top: 0;
 width: 100%;
 height: 50px;
 box-shadow: 0px 2px 4px #000;
-font-family: "AlegreSans-Regular";
+font-family: 'AlegreSans-Regular';
 }
 
 .navbar {
@@ -374,7 +365,6 @@ width: 100%;
 padding: 0;
 margin: 0;
 height: 800px;
-background-image: url("../Imgs/banner.jpg");
 background-repeat: no-repeat;
 background-size: cover;
 background-position: right;
@@ -444,7 +434,7 @@ text-align: center;
 color: white;
 background-color: #111E35;
 font-family: "AlegreSans-Regular";
-border-radius: 5px;
+border-radius: 10px;
 height: 54px; 
 transition: 200ms;
 }
@@ -486,9 +476,13 @@ background-color: #F2F2F2;
 padding-bottom:40px;
 }
 
+<<<<<<< HEAD
 
 
 .contato_container h2{
+=======
+.contato_container h1{
+>>>>>>> Ajuste da responsividade
 font-size: 35px;
 font-family: AlegreSans-Regular;
 color: #111E35;
@@ -499,8 +493,12 @@ letter-spacing: 3px;
 
 }
 
+<<<<<<< HEAD
 
 .contato_label {
+=======
+.titulo_label {
+>>>>>>> Ajuste da responsividade
 padding: 0;
 display: flex;
 justify-content: center;
@@ -689,6 +687,44 @@ line-height: 2px;
     margin-top:40px;
     width: 90%;
   }
+<<<<<<< HEAD
+=======
+  .botao_enviar{
+    display:flex;
+    justify-content: center;
+  }
+
+  /*NOSSA HISTORIA*/
+  .historias {
+    height: 300px;
+    margin-bottom: 40px;
+    margin-right: 60%;
+  }
+  .seta{
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 15px;
+  }
+  .reta{
+    display: flex;
+    background-color: #F2F2F2;
+    height: 100%;
+    width: 5px;
+  }
+
+  .triangulo{
+    display: none
+  }
+
+  .circulos{
+    flex-direction: column;
+    height: 50vh;
+    width: 30px;
+  }
+
+>>>>>>> Ajuste da responsividade
 }
 
 @media (max-width: 500px){
@@ -717,4 +753,35 @@ line-height: 2px;
     letter-spacing: 2px;
   }
 
+<<<<<<< HEAD
 }
+=======
+  .content_hist .header h1{
+    font-size: 2.0em;
+  }
+
+  #underline_titulo{
+    height: 4px;
+    width: 180px;
+  }
+
+ .content p{
+    font-size: 0.9em;
+  }
+  .content{
+    width:180px;
+    height: auto;
+  }
+  .header_bloco h2{
+    font-size: 1.4em;
+  }
+  .header_bloco{
+    width: auto;
+    height: 25px;
+  }
+  .bloco{
+    width: 200px;
+    height: 230px;
+  }
+}
+>>>>>>> Ajuste da responsividade
