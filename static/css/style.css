@@ -277,8 +277,6 @@ background-color: #111E35;
 box-sizing: border-box;
 }
 
-
-
 header {
 background-color: #111E35;
 position: fixed;
@@ -618,9 +616,9 @@ line-height: 2px;
 
 /* NOSSOS MEMBROS */
 .nossos_membros {
-  height: 100vh;
+  height: 65vh;
   background-color: #E0E0E0;
-  padding: 5vh 0;
+  padding: 10vh 0;
 }
 
 .nossos_membros h1{
@@ -632,6 +630,84 @@ line-height: 2px;
   border-bottom: 3px solid orange;
   letter-spacing: 3px;
 }
+
+/*CARROSSEL NOSSOS MEMBROS*/
+
+.slider-wr {
+  width: 70%;
+  height: auto;
+  margin: 30px auto 0px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #111E35;
+  opacity: 1;
+}
+
+.container-membro {
+  align-content: center;
+  text-align: center;
+  padding: 0px 5%;
+}
+
+.container-membro > div {
+  box-shadow: 0 4px 2px -2px grey;
+  border-radius: 5px;
+  overflow: hidden;
+  width: auto;
+}
+
+.container-membro .container-membro > div{
+  position: relative;
+}
+
+.imagem-membro {
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  height: 150px;
+  display: block;
+}
+
+.container-membro > div .overlay{
+  position: absolute;
+  opacity: 0;
+  bottom: 0;
+  color: #F2F2F2;
+  font-size: 15px;
+  font-family: 'LUZRO';
+  transition: .5s ease;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+}
+
+.overlay span{
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 5, 0.5);
+  padding: 5%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.container-membro > div:hover .overlay{
+  opacity: 0.7;
+}
+
+.container-membro > div {
+  position: relative;
+}
+
+/* FIM DE NOSSOS MEMBROS */
+
 
 /*MEDIA QUERY*/
 
@@ -688,7 +764,6 @@ line-height: 2px;
     height: 50vh;
     width: 30px;
   }
-
 }
 
 @media (max-width: 500px){
@@ -744,4 +819,10 @@ line-height: 2px;
     width: 200px;
     height: 230px;
   }
+  .slider-wr {
+    width: 100%;
+    height: auto;
+    margin: 30px auto 0px;
+  }
+
 }
